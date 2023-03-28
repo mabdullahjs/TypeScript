@@ -1,8 +1,9 @@
+"use strict";
 // console.log("abdullah");
 // const inputs = document.querySelectorAll("input");
 // console.log(inputs);
 // console.log("usman");
-//BASIC TYPES
+//------------------------------ BASIC TYPES ------------------------------//
 // let names = "Abdullah";
 // let age = 10;
 // let isAvai = true;
@@ -12,7 +13,7 @@
 //     return diameter * Math.PI;
 // }
 // console.log(circ(52));
-// ARRAY 
+//------------------------------ ARRAY ------------------------------//
 // var names = ['abdullah', 'usman', 'uzair'];
 // names.push('ammar');
 // // names.push(3);
@@ -25,12 +26,13 @@
 // mixed.push('usman');
 // mixed.push(10);
 // mixed[0] = 3;
-var ninjas = [];
-ninjas.push('ryu');
-ninjas.push('chun-li');
-ninjas.push(true);
-console.log(ninjas);
-// OBJECTS
+// let ninjas: string[] = [];
+// let ninjas: (string | Boolean)[] = [];
+// ninjas.push('ryu');
+// ninjas.push('chun-li');
+// ninjas.push(true);
+// console.log(ninjas);
+//------------------------------ OBJECT ------------------------------//
 // var ninja = {
 //     name: 'Muhammad',
 //     belt: 'black',
@@ -45,11 +47,17 @@ console.log(ninjas);
 //     belt: 'orange',
 //     age: 40
 // };
-var names;
-names = {
-    name: "Abdullah",
-    age: 10,
-    isBoolean: true,
-    isArr: ["Name", 5]
-};
-console.log(names);
+// let names: {
+//     name: String,
+//     age: Number,
+//     isBoolean: Boolean,
+//     isArr: (String | Number)[]
+// }
+// names = {
+//     name: "Abdullah",
+//     age: 10,
+//     isBoolean: true,
+//     isArr: ["Name", 5]
+// }
+// console.log(names);
+console.log("abdullah");
