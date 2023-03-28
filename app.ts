@@ -75,6 +75,12 @@
 // mixed.push(10);
 // mixed[0] = 3;
 
+let ninjas: (string | Boolean)[] = [];
+
+ninjas.push('ryu');
+ninjas.push('chun-li');
+ninjas.push(true);
+console.log(ninjas);
 
 
 
@@ -99,3 +105,21 @@
 //     belt: 'orange',
 //     age: 40
 // };
+
+
+
+let names: {
+    name: String,
+    age: Number,
+    isBoolean: Boolean,
+    isArr: (String | Number)[]
+}
+
+names = {
+    name:"Abdullah",
+    age:10,
+    isBoolean:true,
+    isArr:["Name" , 5]
+}
+
+console.log(names);

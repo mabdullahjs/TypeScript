@@ -25,6 +25,11 @@
 // mixed.push('usman');
 // mixed.push(10);
 // mixed[0] = 3;
+var ninjas = [];
+ninjas.push('ryu');
+ninjas.push('chun-li');
+ninjas.push(true);
+console.log(ninjas);
 // OBJECTS
 // var ninja = {
 //     name: 'Muhammad',
@@ -40,3 +45,11 @@
 //     belt: 'orange',
 //     age: 40
 // };
+var names;
+names = {
+    name: "Abdullah",
+    age: 10,
+    isBoolean: true,
+    isArr: ["Name", 5]
+};
+console.log(names);
