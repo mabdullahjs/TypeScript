@@ -136,4 +136,25 @@
 
 // console.log(names);
 
-console.log("abdullah");
+
+
+
+
+
+//------------------------------ Functions ------------------------------//
+
+let greet: Function;
+// greet = (a: number, b: number, c: number|string = 10) :number =>{
+//     return a + b
+    
+// }
+
+greet = (a: number, b: number, c: number|string = 10) :void =>{
+    console.log(a+b);
+    console.log(c);
+    
+    
+}
+
+
+greet(10 , 20 , "hello");
