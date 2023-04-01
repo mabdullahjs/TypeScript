@@ -159,15 +159,35 @@
 
 // greet(10 , 20 , "hello");
 
-type strOrNum = string | number
-type obj = {
-    name:string,
-    age:number
+
+
+
+//------------------------------ type aliases ------------------------------//
+
+
+
+// type strOrNum = string | number
+// type obj = {
+//     name:string,
+//     age:number
+// }
+// const getVal = (a:strOrNum , b:strOrNum , c:obj)=>{
+//     console.log(a , b , c);
+// }
+// getVal(6 , "abdullah" , {
+//     name:"abdullah",
+//     age:23
+// })
+
+
+
+//------------------------------ Function Signature ------------------------------//
+
+let greet: (a: string, b: string) => string;
+greet = (a:string , b:string)=>{
+    return `${a} ${b}`;
+    
 }
-const getVal = (a:strOrNum , b:strOrNum , c:obj)=>{
-    console.log(a , b , c);
-}
-getVal(6 , "abdullah" , {
-    name:"abdullah",
-    age:23
-})
+
+console.log(greet("abdullah" , "hello"));
+
