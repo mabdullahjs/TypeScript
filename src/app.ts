@@ -143,18 +143,31 @@
 
 //------------------------------ Functions ------------------------------//
 
-let greet: Function;
-// greet = (a: number, b: number, c: number|string = 10) :number =>{
-//     return a + b
+// let greet: Function;
+// // greet = (a: number, b: number, c: number|string = 10) :number =>{
+// //     return a + b
+    
+// // }
+
+// greet = (a: number, b: number, c: number|string = 10) :void =>{
+//     console.log(a+b);
+//     console.log(c);
+    
     
 // }
 
-greet = (a: number, b: number, c: number|string = 10) :void =>{
-    console.log(a+b);
-    console.log(c);
-    
-    
+
+// greet(10 , 20 , "hello");
+
+type strOrNum = string | number
+type obj = {
+    name:string,
+    age:number
 }
-
-
-greet(10 , 20 , "hello");
+const getVal = (a:strOrNum , b:strOrNum , c:obj)=>{
+    console.log(a , b , c);
+}
+getVal(6 , "abdullah" , {
+    name:"abdullah",
+    age:23
+})
