@@ -146,14 +146,14 @@
 // let greet: Function;
 // // greet = (a: number, b: number, c: number|string = 10) :number =>{
 // //     return a + b
-    
+
 // // }
 
 // greet = (a: number, b: number, c: number|string = 10) :void =>{
 //     console.log(a+b);
 //     console.log(c);
-    
-    
+
+
 // }
 
 
@@ -183,11 +183,32 @@
 
 //------------------------------ Function Signature ------------------------------//
 
-let greet: (a: string, b: string) => string;
-greet = (a:string , b:string)=>{
-    return `${a} ${b}`;
-    
+// let greet: (a: string, b: string) => string;
+// greet = (a:string , b:string)=>{
+//     return `${a} ${b}`;
+
+// }
+
+// console.log(greet("abdullah" , "hello"));
+
+
+
+
+
+//------------------------------ Interfaces ------------------------------//
+
+interface Person {
+    name: string;
+    age: number;
+    speak(a: string): void;
 }
 
-console.log(greet("abdullah" , "hello"));
+const me: Person = {
+    name:"abdullah",
+    age:20,
+    speak(a) {
+        console.log(a);
+    },
+}
 
+console.log(me);
