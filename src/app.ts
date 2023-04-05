@@ -197,18 +197,53 @@
 
 //------------------------------ Interfaces ------------------------------//
 
-interface Person {
-    name: string;
-    age: number;
-    speak(a: string): void;
-}
+// interface Person {
+//     name: string;
+//     age: number;
+//     speak(a: string): void;
+// }
 
-const me: Person = {
-    name:"abdullah",
-    age:20,
-    speak(a) {
-        console.log(a);
-    },
-}
+// const me: Person = {
+//     name:"abdullah",
+//     age:20,
+//     speak(a) {
+//         console.log(a);
+//     },
+// }
 
-console.log(me);
+// console.log(me);
+
+
+
+
+//------------------------------ Generics ------------------------------//
+
+
+// const user = <T>(data:T) :T=>{
+//     return data
+// }
+
+// console.log(user(["abdullah"]));
+// console.log(user(50));
+// console.log(user({name:"abdullah" , age:10}));
+
+
+
+
+
+
+//------------------------------ Enums ------------------------------//
+
+// enum Days {
+//     mon = "monday", tues = "tuesday", wed = "wednesday", thur = "thursday", fri = "friday", sat = "saturday", sun = "sunday"
+// }
+
+// const daysName: Days = Days.sun;
+// console.log(daysName);
+
+
+//------------------------------ Tuples ------------------------------//
+
+// const arr : [string , number , string?] = ["abdullah" , 5];
+// arr.push('usman');
+// console.log(arr);
